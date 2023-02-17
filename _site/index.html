@@ -13,31 +13,7 @@
   <body>
     <header>
       
-      ---js
-{
-  navigationOptions: {
-    listElement: "ul",            // Change the top level tag
-    listItemElement: "li",        // Change the item tag
-
-    listClass: "navbar-nav",                // Add a class to the top level
-    listItemClass: "nav-item",            // Add a class to every item
-    listItemHasChildrenClass: "", // Add a class if the item has children
-    activeListItemClass: "",      // Add a class to the current page’s item
-
-    anchorClass: "nav-link",              // Add a class to the anchor
-    activeAnchorClass: "active",        // Add a class to the current page’s anchor
-
-    // If matched, `activeListItemClass` and `activeAnchorClass` will be added
-    activeKey: "",
-    // It’s likely you want to pass in `eleventyNavigation.key` here, e.g.:
-    // activeKey: eleventyNavigation.key
-
-    // Show excerpts (if they exist in data, read more above)
-    showExcerpt: false
-  }
-}
----
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">11ty Test</a>
     <button
@@ -51,7 +27,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      
+      <ul class="navbar-nav"><li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+<li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li></ul>
     </div>
   </div>
 </nav>
